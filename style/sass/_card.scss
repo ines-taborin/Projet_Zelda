@@ -8,6 +8,12 @@ background-color: $white;
   border-top: 50px solid transparent;
   border-image: url("../../image/runes-top-ivory.png") 150 repeat;
 }
+
+.titre {
+  font-family: $font-zelda;
+  font-size: 1rem;
+}
+
 .card {
   width: 32%;
   display: grid;
@@ -33,6 +39,7 @@ background-color: $white;
     color: $lightblue;
   }
 }
+
 
 .card__box {
   @extend %container;
