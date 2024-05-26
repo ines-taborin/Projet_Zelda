@@ -1,6 +1,6 @@
-#newsletter, .card__box {
-  width: 90%;
-  max-width: 1200px;
+.navbar, .card__box {
+  display: block;
+  max-width: 85%;
   margin-inline: auto;
 }
 
@@ -49,6 +49,7 @@
   gap: 1.5em;
 }
 
+/*global*/
 body {
   background-color: #F4F4D9;
   font-family: "Lexend Deca", sans-serif;
@@ -71,7 +72,172 @@ h2 {
   font-family: "Hylia serif";
 }
 
+/*bouton*/
+.button__deco {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+  font-family: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  transition: color 0.2s ease-in;
+}
+.button__deco:hover {
+  color: #BCA36A;
+  cursor: pointer;
+}
+.button__deco:hover .left-decoration:before {
+  transform: translate(3px, 3px);
+}
+.button__deco:hover .left-decoration:after {
+  transform: translate(3px, -3px) rotate(-90deg);
+}
+.button__deco:hover .right-decoration:before {
+  transform: translate(-3px, 3px) rotate(90deg);
+}
+.button__deco:hover .right-decoration:after {
+  transform: translate(-3px, -3px) rotate(180deg);
+}
+.button__deco .button__text {
+  color: #212D40;
+  margin: 13px;
+  display: block;
+  line-height: 1;
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+  padding: 15px 25px;
+  letter-spacing: 2px;
+  transition: background-color 0.2s ease-in;
+}
+.button__deco .left-decoration {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.button__deco .left-decoration:before {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  background: url(https://www.zelda.com/breath-of-the-wild/assets/img/decorations/decorated-button__decoration.svg);
+  transition: transform 0.2s ease-in;
+}
+.button__deco .left-decoration:after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  transform: rotate(-90deg);
+  background: url(https://www.zelda.com/breath-of-the-wild/assets/img/decorations/decorated-button__decoration.svg);
+  transition: transform 0.2s ease-in;
+}
+.button__deco .right-decoration {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.button__deco .right-decoration:before {
+  top: 0;
+  right: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  transform: rotate(90deg);
+  background: url(https://www.zelda.com/breath-of-the-wild/assets/img/decorations/decorated-button__decoration.svg);
+  transition: transform 0.2s ease-in;
+}
+.button__deco .right-decoration:after {
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  transform: rotate(180deg);
+  background: url(https://www.zelda.com/breath-of-the-wild/assets/img/decorations/decorated-button__decoration.svg);
+  transition: transform 0.2s ease-in;
+}
+
 /*Navbar*/
+header {
+  background-image: url("../../image/bg-gold.png");
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo img {
+  width: 20%;
+}
+.navbar img {
+  vertical-align: middle;
+}
+.navbar a {
+  font-size: 1.5rem;
+  color: #F4F4D9;
+  font-family: "Hylia serif";
+}
+.navbar a:hover {
+  color: #65BC91;
+  text-decoration: underline #65BC91;
+}
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  margin-right: 10%;
+}
+.navbar__list img {
+  width: 20%;
+  transition: transform 0.3s;
+}
+.navbar__list img:hover {
+  transform: scale(1.2);
+}
+
+/*Hero*/
+#hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 1.5em;
+  border-top: 20px solid transparent;
+  border-image: url("../../image/runes-top-gold.png") 150 repeat;
+}
+#hero img {
+  width: 100%;
+}
+
+/*Newsletter*/
 #newsletter {
   display: flex;
   flex-direction: column;
@@ -79,16 +245,30 @@ h2 {
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  border-bottom: solid 20px #BCA36A;
   text-align: center;
 }
 
+.form__input--group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*Carte interactive*/
 #carteinteractive {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color: #65BC91;
+  text-align: center;
   gap: 1.5em;
+}
+#carteinteractive h2 {
+  color: #F4F4D9;
 }

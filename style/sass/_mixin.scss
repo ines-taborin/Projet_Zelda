@@ -9,3 +9,8 @@
   padding-top: $top;
   padding-bottom: $bottom;
 }
+
+@mixin marginTopBottom($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
