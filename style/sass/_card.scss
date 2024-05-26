@@ -1,0 +1,45 @@
+@use "variable" as *;
+@use "typo" as *;
+@use "mixin" as *;
+
+#personnage {
+background-color: $white;
+  padding: 15px 0 15px 0;
+  border-top: 50px solid transparent;
+  border-image: url("../../image/runes-top-ivory.png") 150 repeat;
+}
+.card {
+  width: 32%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 180px 1fr auto;
+
+  &__image {
+    @include flexBox(row, center, center);
+    background-color: $white;
+    border-bottom: 20px solid transparent;
+    border-image: url("../../image/bande_verte.png") 30 repeat;
+    padding: 5%;
+  }
+
+  &__body {
+    padding: 5%;
+    background-color: $beige;
+    border-radius: 0 0 10% 10%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $lightblue;
+  }
+}
+
+.card__box {
+  @extend %container;
+
+  padding: 2% 0 2% 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  gap: 1.5em;
+}

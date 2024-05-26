@@ -1,0 +1,11 @@
+@mixin flexBox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin paddingTopBottom($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

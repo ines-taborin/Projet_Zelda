@@ -1,0 +1,42 @@
+@use "variable" as *;
+@use "typo" as *;
+@use "mixin" as *;
+@use "card" as *;
+
+body {
+  background-color: $beige;
+  font-family: $font-base;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: $font-hulyia;
+}
+
+/*Navbar*/
+
+#newsletter {
+  @include flexBox(column, center, center);
+  @include paddingTopBottom(5%, 5%);
+  @extend %container;
+  text-align: center;
+}
+
+#carteinteractive {
+  @include flexBox(column, center, center);
+  @include paddingTopBottom(5%, 5%);
+  background-color: $lightblue;
+  gap: 1.5em;
+}
