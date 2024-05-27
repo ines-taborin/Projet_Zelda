@@ -40,27 +40,39 @@
         <nav>
           <ul class="navbar__list">
             <li>
-              <a class="nav__list" href="#"
-                ><img class="nav__list--img" src="image/nav1.png" alt="" /> Menu
-                1
+              <a class="nav__list" href="#personnage"
+                ><img
+                  class="nav__list--img"
+                  src="image/nav1.png"
+                  alt="logo pouvoir 1" />
+                Personnages
               </a>
             </li>
             <li>
-              <a class="nav__list" href="#">
-                <img class="nav__list--img" src="image/nav2.png" alt="" /> Menu
-                2
+              <a class="nav__list" href="#gallery">
+                <img
+                  class="nav__list--img"
+                  src="image/nav2.png"
+                  alt="logo pouvoir 2" />
+                Gallerie
               </a>
             </li>
             <li>
-              <a class="nav__list" href="#">
-                <img class="nav__list--img" src="image/nav3.png" alt="" />
-                Menu 3
+              <a class="nav__list" href="#recette">
+                <img
+                  class="nav__list--img"
+                  src="image/nav3.png"
+                  alt="logo pouvoir 3" />
+                Recettes
               </a>
             </li>
             <li>
-              <a class="nav__list" href="#">
-                <img class="nav__list--img" src="image/nav4.png" alt="" />
-                Menu 4
+              <a class="nav__list" href="#contact">
+                <img
+                  class="nav__list--img"
+                  src="image/nav4.png"
+                  alt="logo pouvoir 4" />
+                Carte
               </a>
             </li>
           </ul>
@@ -79,6 +91,14 @@
       <!--Newsletter-->
       <section id="newsletter">
         <h3>Envie d'en savoir plus ? Abonnez-vous à notre newsletter</h3>
+        <div class="form__input--group">
+          <input
+            class="form__input"
+            type="mail"
+            name="mail"
+            id="mailing__list--mail"
+            placeholder="link@hyrule.totk" />
+        </div>
         <p>
           Entrez dans le royaume de l'aventure avec notre newsletter exclusive
           dédiée à Zelda : Tears of the Kingdom ! Plongez au cœur de Hyrule et
@@ -89,19 +109,11 @@
         </p>
 
         <form class="form" action="#">
-          <div class="form__input--group">
-            <input
-              class="form__input"
-              type="mail"
-              name="mail"
-              id="mailing__list--mail"
-              placeholder="link@hyrule.totk" />
-            <button class="button__deco" type="submit">
-              <div class="button__text">J'y plonge !</div>
-              <div class="left-decoration"></div>
-              <div class="right-decoration"></div>
-            </button>
-          </div>
+          <button class="button__deco" type="submit">
+            <div class="button__text">J'y plonge !</div>
+            <div class="left-decoration"></div>
+            <div class="right-decoration"></div>
+          </button>
         </form>
       </section>
 
@@ -402,178 +414,213 @@
           </div>
         </div>
       </section>
+
+      <!--Recipes-->
+      <section id="recette">
+        <div class="recette__container">
+          <div class="recette__text">
+            <h2>Quelques recettes emblématiques</h2>
+            <p>
+              Dans "The Legend of Zelda: Breath of the Wild", les recettes sont
+              essentielles pour restaurer la santé et obtenir des buffs. Chaque
+              recette est une combinaison d'ingrédients qui peut conférer des
+              avantages spécifiques comme la régénération de santé,
+              l'augmentation de la résistance au froid ou la restauration de
+              l'endurance. La découverte et l'expérimentation de nouvelles
+              recettes font partie intégrante de l'exploration et de la survie
+              dans le vaste monde ouvert du jeu.
+            </p>
+          </div>
+          <!--Recipes1-->
+          <div class="recette__card-container">
+            <div class="recette__card">
+              <div class="recette__card--titre">
+                <h3>Assiette fruits et champi</h3>
+              </div>
+              <div class="recette__card--image">
+                <img
+                  src="image/assiettefruitchampi.png"
+                  alt="assiete fruit et champi" />
+              </div>
+              <div class="recette__card--text">
+                <p>
+                  <em>Effet de base :</em>
+                  <br />
+                  restaure des cœurs rouges + effet selon l'ingrédient
+                  <br />
+                  <em>Ingrédients de base :</em> <br />
+                  1 pomme + 1 champi
+                </p>
+              </div>
+            </div>
+
+            <!--Recipes2-->
+
+            <div class="recette__card">
+              <div class="recette__card--titre">
+                <h3>Crabe sauté</h3>
+              </div>
+              <div class="recette__card--image">
+                <img src="image/crabesale.png" alt="assiete fruit et champi" />
+              </div>
+              <div class="recette__card--text">
+                <p>
+                  <em>Effet de base :</em>
+                  <br />
+                  restaure des cœurs + effet selon l'ingrédient rajouté
+                  <br />
+                  <em>Ingrédients de base :</em> <br />
+                  1 crabe au choix + 1 flacon d'épices goron
+                </p>
+              </div>
+            </div>
+
+            <!--Recipes3-->
+
+            <div class="recette__card">
+              <div class="recette__card--titre">
+                <h3>Râgout de la mer</h3>
+              </div>
+              <div class="recette__card--image">
+                <img src="image/ragoutdelamer.png" alt="ragout de la mer" />
+              </div>
+              <div class="recette__card--text">
+                <p>
+                  <em>Effet de base :</em>
+                  <br />
+                  restaure des cœurs + une jauge d'endurance jaune
+                  <br />
+                  <em>Ingrédients de base :</em> <br />
+                  1 poisson au choix + 1 huile + 1 gousse enduro
+                </p>
+              </div>
+            </div>
+
+            <!--Recipes4-->
+
+            <div class="recette__card">
+              <div class="recette__card--titre">
+                <h3>Gâteau au monstre</h3>
+              </div>
+              <div class="recette__card--image">
+                <img src="image/1gateaudemonstre.png" alt="gateau de monstre" />
+              </div>
+              <div class="recette__card--text">
+                <p>
+                  <em>Effet de base :</em>
+                  <br />
+                  restaure 1/4 de coeur + effet selon l'ingrédient rajouté
+                  <br />
+                  <em>Ingrédients de base :</em> <br />
+                  1 canne à sucre + 1 blé + 1 motte de beurre + 1 extrait de
+                  monstre
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact__map--container">
+          <iframe
+            class="contact__map"
+            src="https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/?z=3&x=214&y=-155"
+            frameborder="0"></iframe>
+
+          <!--form-->
+          <aside class="contact__box">
+            <form
+              id="form"
+              novalidate
+              class="contact__form"
+              onsubmit="handleSubmit(event)">
+              <div class="form__input">
+                <label class="form__label" for="first_name">Pseudo</label>
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="Link"
+                  required />
+                <div class="errorMessage"></div>
+              </div>
+              <div class="form__input">
+                <label class="form__label" for="last_name">Titre</label>
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Chevalier de Zelda
+            "
+                  required />
+                <div class="errorMessage"></div>
+              </div>
+
+              <div class="form__input">
+                <label class="form__label" for="email">Adresse</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Cocorico@hyrule.totk"
+                  required />
+                <div class="errorMessage"></div>
+              </div>
+
+              <div class="form__input">
+                <label class="form__label" for="message">Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Cher Zelda..."
+                  id="message"
+                  rows="3"
+                  required></textarea>
+                <div class="errorMessage"></div>
+              </div>
+
+              <div class="button__deco">
+                <input class="button__text" type="submit" value="Envoyer" />
+                <div class="left-decoration"></div>
+                <div class="right-decoration"></div>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img src="image/logo.png" alt="logo" />
+        </div>
+        <div class="footer__link">
+          <ul class="footer__list">
+            <li><a href="#personnage">Personnages</a></li>
+            <li><a href="#gallery">Gallerie</a></li>
+            <li><a href="#recette"></a>Recettes</li>
+            <li><a href="#contact"></a>Carte</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__dev">
+          <p>Fait par : Inès Taborin</p>
+        </div>
+        <div class="footer__social">
+          <a href="https://github.com/ines-taborin/TP1_intWeb2" target="_blank">
+            <img src="image/github.svg" alt="github" />
+          </a>
+          <a href="https://github.com/ines-taborin/TP1_intWeb2" target="_blank">
+            <img src="image/instagram.svg" alt="instagram" />
+          </a>
+        </div>
+        <div class="footer__contact">
+          <p>Téléphone : 514-123-4567</p><p> Mail : Ines.taborin@hyrule.totk</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
-<!--Recipes-->
-<section id="recette">
-  <div class="recette__container">
-    <div class="recette__text">
-      <h2>Quelques recettes emblématiques</h2>
-      <p>
-        Dans "The Legend of Zelda: Breath of the Wild", les recettes sont
-        essentielles pour restaurer la santé et obtenir des buffs. Chaque
-        recette est une combinaison d'ingrédients qui peut conférer des
-        avantages spécifiques comme la régénération de santé, l'augmentation de
-        la résistance au froid ou la restauration de l'endurance. La découverte
-        et l'expérimentation de nouvelles recettes font partie intégrante de
-        l'exploration et de la survie dans le vaste monde ouvert du jeu.
-      </p>
-    </div>
-    <!--Recipes1-->
-    <div class="recette__card-container">
-      <div class="recette__card">
-        <div class="recette__card--titre">
-          <h3>Assiette fruits et champi</h3>
-        </div>
-        <div class="recette__card--image">
-          <img
-            src="image/assiettefruitchampi.png"
-            alt="assiete fruit et champi" />
-        </div>
-        <div class="recette__card--text">
-          <p>
-            <em>Effet de base :</em>
-            <br />
-            restaure des cœurs rouges + effet selon l'ingrédient
-            <br />
-            <em>Ingrédients de base :</em> <br />
-            1 pomme + 1 champi
-          </p>
-        </div>
-      </div>
-
-      <!--Recipes2-->
-
-      <div class="recette__card">
-        <div class="recette__card--titre">
-          <h3>Crabe sauté</h3>
-        </div>
-        <div class="recette__card--image">
-          <img src="image/crabesale.png" alt="assiete fruit et champi" />
-        </div>
-        <div class="recette__card--text">
-          <p>
-            <em>Effet de base :</em>
-            <br />
-            restaure des cœurs + effet selon l'ingrédient rajouté
-            <br />
-            <em>Ingrédients de base :</em> <br />
-            1 crabe au choix + 1 flacon d'épices goron
-          </p>
-        </div>
-      </div>
-
-      <!--Recipes3-->
-
-      <div class="recette__card">
-        <div class="recette__card--titre">
-          <h3>Râgout de la mer</h3>
-        </div>
-        <div class="recette__card--image">
-          <img src="image/ragoutdelamer.png" alt="ragout de la mer" />
-        </div>
-        <div class="recette__card--text">
-          <p>
-            <em>Effet de base :</em>
-            <br />
-            restaure des cœurs + une jauge d'endurance jaune
-            <br />
-            <em>Ingrédients de base :</em> <br />
-            1 poisson au choix + 1 huile + 1 gousse enduro
-          </p>
-        </div>
-      </div>
-
-      <!--Recipes4-->
-
-      <div class="recette__card">
-        <div class="recette__card--titre">
-          <h3>Gâteau au monstre</h3>
-        </div>
-        <div class="recette__card--image">
-          <img src="image/1gateaudemonstre.png" alt="gateau de monstre" />
-        </div>
-        <div class="recette__card--text">
-          <p>
-            <em>Effet de base :</em>
-            <br />
-            restaure 1/4 de coeur + effet selon l'ingrédient rajouté
-            <br />
-            <em>Ingrédients de base :</em> <br />
-            1 canne à sucre + 1 blé + 1 motte de beurre + 1 extrait de monstre
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="contact__map--container">
-    <iframe
-      class="contact__map"
-      src="https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/?z=3&x=214&y=-155"
-      frameborder="0"></iframe>
-
-    <!--form-->
-    <aside class="contact__box">
-      <form
-        id="form"
-        novalidate
-        class="contact__form"
-        onsubmit="handleSubmit(event)">
-        <div class="form__input">
-          <label class="form__label" for="first_name">Pseudo</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            placeholder="Link"
-            required />
-          <div class="errorMessage"></div>
-        </div>
-        <div class="form__input">
-          <label class="form__label" for="last_name">Titre</label>
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            placeholder="Chevalier de Zelda
-            "
-            required />
-          <div class="errorMessage"></div>
-        </div>
-
-        <div class="form__input">
-          <label class="form__label" for="email">Adresse</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Cocorico@hyrule.totk"
-            required />
-          <div class="errorMessage"></div>
-        </div>
-
-        <div class="form__input">
-          <label class="form__label" for="message">Message</label>
-          <textarea
-            name="message"
-            placeholder="Cher Zelda..."
-            id="message"
-            rows="3"
-            required></textarea>
-          <div class="errorMessage"></div>
-        </div>
-
-        <div class="button__deco">
-          <input class="button__text" type="submit" value="Envoyer" />
-          <div class="left-decoration"></div>
-          <div class="right-decoration"></div>
-        </div>
-      </form>
-    </aside>
-  </div>
-</section>
