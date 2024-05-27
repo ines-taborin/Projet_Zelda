@@ -470,20 +470,21 @@ footer {
 
 .footer__dev {
   @include flexBox(row, center, flex-start);
-  width: 33%;
+  width: 40%;
 }
 
 .footer__social {
-  width: 33%;
-
+  @include flexBox(row, center, center);
+  width: 20%;
+  gap: 15%;
   img {
-    width: 5%;
+    width: 25%;
   }
 
 }
 .footer__contact {
   @include flexBox(row, center, center);
-  width: 33%;
+  width: 40%;
   gap: 15%;
   font-size: 1rem;
 }
